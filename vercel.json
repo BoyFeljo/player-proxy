@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "functions": {
+    "index.js": {
+      "maxDuration": 10
+    }
+  },
+  "routes": [
+    {
+      "src": "/(\\d+)",
+      "dest": "/index.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/",
+      "dest": "/index.js",
+      "methods": ["GET"]
+    }
+  ]
+}
